@@ -3,9 +3,13 @@
 
 # PROCEDURE
 Set up an Elastic Beanstalk web server environment, an RDS database, and an EFS filesystem with mountpoints (remember to configure and use the appropriate security groups for EB to gain access to RDS and EFS
+
 Download Wordpress zip from wordpress.org
+
 Add .ebextensions folder, add the .gitignore file and the .platform folder
+
 IMPORTANT: under wp-content, add a folder called 'uploads'
+
 Then zip the wordpress folder and deploy to EB.
 
 # CREDITS
