@@ -2,13 +2,13 @@
 .ebextensions file to mount Amazon Elastic File System for wp-content/uploads on Elastic Beanstalk
 
 # PROCEDURE
-Set up an Elastic Beanstalk web server environment, an RDS database, and an EFS filesystem with mountpoints (remember to configure and use the appropriate security groups for EB to gain access to RDS and EFS
+Set up an Elastic Beanstalk web server environment, an RDS database, and an EFS filesystem with mountpoints (remember to configure and use the appropriate security groups for EB to gain access to RDS and EFS). Make sure the web engine is set to nginx, not Apache.
 
 Download Wordpress zip from wordpress.org
 
 Add .ebextensions folder, add the .gitignore file and the .platform folder
 
-IMPORTANT: under wp-content, add a folder called 'uploads'
+IMPORTANT: under wp-content folder, add a folder called 'uploads'
 
 Then zip the wordpress folder and deploy to EB.
 
